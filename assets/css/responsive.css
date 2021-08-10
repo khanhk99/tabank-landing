@@ -1,0 +1,83 @@
+@media (max-width: 768px) {
+    .f-slogan{
+        padding: 20px 0 0 20px;
+        width: 100%;
+    }
+    
+    .f-contact{
+        padding: 20px 0 0 20px;
+        width: 100%;
+    }
+    
+    .f-newsletter{
+        padding: 20px 0 0 20px;
+        width: 100%;
+    }
+
+    .item-contact{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .item-advisor{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .ecosystem{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .list-exchange{
+        white-space: nowrap;
+        overflow: auto hidden;
+    }
+
+    .list-exchange::-webkit-scrollbar{
+        display: none;
+    }
+
+    .list-exchange > div{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .h-title{
+        font-size: 36px;
+        margin-top: 20px;
+    }
+
+    .h-description, .tokenomic-des, .tokenomic-des{
+        padding: 0;
+    }
+
+    .buy.btn, .btn-contactus{
+        padding: 8px 16px;
+    }
+
+    .about .row .col-md-6.plc{
+        padding-left: 0;
+    }
+
+    .about .row .col-md-6.prc{
+        padding-right: 0;
+    }
+
+    .list-exchange{
+        margin-bottom: 0;
+    }
+
+    .header{
+        padding-bottom: 100px;
+    }
+
+    .item-solution{
+        margin-bottom: 15px;
+    }
+
+    .tokenomic-chart svg{
+        width: 300px;
+        height: 300px;
+    }
+}

@@ -1,9 +1,3 @@
-@media (min-width: 1200px) {
-    .container{
-        max-width: 1350px;
-    }
-}
-
 @font-face {
     font-family: inter-bold;
     src: url(../fonts/Inter-Bold.ttf);
@@ -150,6 +144,8 @@ body{
     border-radius: 72px;
 }
 
+
+
 .header{
     padding-top: 40px;
     background-image: url(../images/BG\ Home.png);
@@ -187,7 +183,7 @@ body{
     padding: 0 25%;
 }
 
-.buy.btn{
+.buy.btn, .btn-contactus{
     padding: 16px 32px;
     margin-right: 10px;
 }
@@ -316,8 +312,8 @@ body{
 
 .item-flag{
     display: inline-block;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
     margin-bottom: 54px;
 }
 
@@ -334,8 +330,7 @@ body{
 }
 
 .ecosystem img{
-    width: 448px;
-    height: 336px;
+    width: 83%;
     filter: drop-shadow(16px 16px 64px rgba(0, 0, 0, 0.4));
     border-radius: 16px;
 }
@@ -441,8 +436,8 @@ body{
 
 .item-advisor{
     display: inline-block;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 90px;
+    padding-right: 90px;
     margin-bottom: 84px;
 }
 
@@ -483,18 +478,21 @@ body{
 }
 
 .f-slogan{
-    padding: 58px 50px 0 0;
+    padding: 58px 40px 0 0;
+    width: 25%;
 }
 
 .f-contact{
-    padding: 74px 42px 0 64px;
+    padding: 74px 0px 0 64px;
     border-color: #31353D;
     border-style: solid;
     border-width: 0px 1px 0 1px;
+    width: 35%;
 }
 
 .f-newsletter{
     padding: 74px 0px 58px 96px;
+    width: 40%;
 }
 
 .f-slogan .logo{
@@ -540,9 +538,13 @@ body{
     outline: none;
 }
 
+.field-form:hover{
+    border-color: #fff;
+}
+
 .f-newsletter .field-form{
     margin-top: 27px;
-    width: 352px;
+    width: 100%;
 }
 
 .field-form .btn{
@@ -582,11 +584,147 @@ html {
     scroll-behavior: smooth;
 }
 
-@keyframes rotation {
-    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+.icon-menu-res{
+    color: #ffffff;
+    font-size: 22px;
 }
 
-.triangle-animation{
-    position: absolute;
-    animation: rotation 100s linear infinite;
+.menu-responsive{
+    background-image: url(../images/BG-none-triangle.png);
+    padding: 5px 20px 0 30px;
+    visibility: visible;
+    transition: all 0.5s ease 0s;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    left: -100%;
+}
+
+.menu-responsive.active{
+    left: 0;
+    visibility: visible;
+}
+
+.menu-responsive ul li a{
+    color: #ffffff;
+}
+.menu-responsive ul{
+    list-style: none;
+    padding-left: 0;
+    font-size: 16px;
+}
+
+.menu-responsive ul li{
+    margin-bottom: 10px;
+}
+
+.bg-team{
+    width: 56px;
+    height: 28px;
+    background: linear-gradient(6.14deg, #82C3E8 1.76%, #9A80E6 96.56%);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin-right: 3px;
+}
+
+.bg-bonus{
+    width: 56px;
+    height: 28px;
+    background: linear-gradient(180deg, #EE9BCD 0%, #AB75F1 100%);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: 3px;
+}
+
+.bg-development{
+    width: 56px;
+    height: 28px;
+    background: linear-gradient(180deg, #FCD281 0%, #FC8E72 100%);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: 3px;
+}
+
+.token-percent{
+    font-size: 14px;
+    line-height: 14px;
+    color: #94989E;
+}
+
+.tokenomic-chart .chart-hover{
+    color: #ffffff;
+    font-size: 12px;
+    background-color: rgba(56, 54, 54, 0.4);
+    padding: 2px 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.tokenomic-chart .chart-hover.team{
+    top: 15%;
+    right: 31%;
+}
+
+.tokenomic-chart .chart-hover.bonus{
+    top: 40%;
+    right: 13%;
+}
+
+.tokenomic-chart .chart-hover.development{
+    top: 42%;
+    left: 0%;
+}
+
+.tokenomic-chart .chart-bonus:hover ~ .chart-hover.bonus{
+    display: block;
+}
+
+.tokenomic-chart .item-svg-chart:hover{
+    cursor: pointer;
+}
+
+.menu .item-menu a:hover{
+    text-decoration: none;
+    border-color: #FCD281;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+}
+
+.btn:hover{
+    color: #ffffff;
+}
+
+.btn.bg-blue:hover{
+    background: linear-gradient(259.47deg, #105ECF -2.61%, #2971FC 120.16%);
+}
+
+.btn.login:hover{
+    background: linear-gradient(359.65deg, #B11212 -62.5%, #B81515 62.99%);
+    border: 1px solid #9A0000;
+    box-sizing: border-box;
+}
+
+.btn.btn-contactus:hover span{
+    text-decoration: underline;
+}
+
+.item-flag:hover img{
+    border: 3px #FCD281 solid;
+}
+
+.item-advisor:hover img{
+    border: 3px #FCD281 solid;
 }

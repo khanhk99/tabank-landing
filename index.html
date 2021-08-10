@@ -10,40 +10,80 @@
     <link rel="stylesheet" href="assets/libs/bootstrap-4.6.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/libs/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 </head>
 
 <body class="position-relative">
+    <div class="menu-responsive">
+        <div class="d-flex mt-5 mb-2 justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <div class="logo">
+                    <img src="assets/images/Logo TABANK.png">
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="icon-menu-res icon-menu-res-close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+        <div>
+            <div class="">
+                <ul class="list-menu mb-0 color-ffffff text-16">
+                    <li class="item-menu">
+                        <a href="#about" onclick="closeMenu()">About</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#solution" onclick="closeMenu()">Solutions</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#whitepaper" onclick="closeMenu()">Whitepaper</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#roadmap" onclick="closeMenu()">Roadmap</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#team" onclick="closeMenu()">Team</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="user mt-3">
+                <div>
+                    <button class="btn color-ffffff bg-blue br-72">Sign up</button>
+                </div>
+                <div>
+                    <button class="btn color-ffffff br-72">Login</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <a class="scroll-up" href="#header">
         <i class="fas fa-chevron-up"></i>
     </a>
     <div class="header" id="header">
-        <!-- svg triangle -->           
-                  
-        <!-- svg triangle -->
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="logo">
                     <img src="assets/images/Logo TABANK.png">
                 </div>
-                <div class="d-flex align-items-center inter-regular">
+                <div class="d-md-flex d-none align-items-center inter-regular ">
                     <div class="menu">
                         <ul class="list-menu mb-0 color-ffffff text-16">
                             <li class="item-menu">
-                                <a href="#">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li class="item-menu">
-                                <a href="#">Solutions</a>
+                                <a href="#solution">Solutions</a>
                             </li>
                             <li class="item-menu">
-                                <a href="#">Whitepaper</a>
+                                <a href="#whitepaper">Whitepaper</a>
                             </li>
                             <li class="item-menu">
-                                <a href="#">Roadmap</a>
+                                <a href="#roadmap">Roadmap</a>
                             </li>
                             <li class="item-menu">
-                                <a href="#">Team</a>
+                                <a href="#team">Team</a>
                             </li>
                         </ul>
                     </div>
@@ -52,6 +92,10 @@
                         <button class="login btn color-ffffff br-72">Login</button>
                     </div>
                 </div>
+                <a href="javascript:void(0)" class="icon-menu-res icon-menu-res-open d-md-none d-block"
+                    onclick="openMenu()">
+                    <i class="fas fa-grip-lines"></i>
+                </a>
             </div>
             <div class="h-title text-center color-ffffff lufga-regular fw-600 text-60">
                 Building a Cryptocurrency Ecosystem and DEFI
@@ -62,7 +106,7 @@
             </div>
             <div class="d-flex align-items-center justify-content-center">
                 <button class="buy btn color-ffffff br-72 bg-blue">Buy TAB now</button>
-                <button class="btn color-ffffff br-72">
+                <button class="btn-contactus btn color-ffffff br-72">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
@@ -81,7 +125,7 @@
     <div class="main">
         <div class="intro bg-0d1118">
             <div class="container">
-                <div class="about">
+                <div class="about" id="about">
                     <div class="row">
                         <div class="col-md-6 col-12 prc">
                             <div class="title color-ffffff lufga-regular text-40">About us</div>
@@ -164,7 +208,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container" id="solution">
                 <div class="listing-title text-center lufga-regular text-40 color-ffffff fw-600">TAB Solutions</div>
                 <div class="text-center inter-regular text-16 color-94989e fw-400">
                     TABANK has online payments, savings, lending, and investment solutions are built into one platform.
@@ -295,21 +339,71 @@
                 <div class="row">
                     <div class="col-md-6 col-12">
                         <div class="tokenomic-legend">
-                            <button class="btn">
-                                <span class="bg-team"></span>
-                                <span class="token-percent ">15% Team</span>
-                            </button>
-                            <button class="btn">
-                                <span class="bg-bonus"></span>
-                                <span class="token-percent ">20% bonus</span>
-                            </button>
-                            <button class="btn">
-                                <span class="bg-development"></span>
-                                <span class="token-percent ">65% Development</span>
-                            </button>
+                            <div class="d-inline-flex align-items-center mr-2">
+                                <div class="bg-team"></div>
+                                <span class="token-percent">15% Team</span>
+                            </div>
+                            <div class="d-inline-flex align-items-center mr-2">
+                                <div class="bg-bonus"></div>
+                                <span class="token-percent">20% bonus</span>
+                            </div>
+                            <div class="d-inline-flex align-items-center mr-2">
+                                <div class="bg-development"></div>
+                                <span class="token-percent">65% Development</span>
+                            </div>
                         </div>
-                        <div class="tokenomic-chart">
-
+                        <div class="tokenomic-chart position-relative">
+                            <div class="chart-hover team position-absolute">15% Team</div>
+                            <div class="chart-hover bonus position-absolute">20% bonus</div>
+                            <div class="chart-hover development position-absolute">65% Development</div>
+                            <svg width="513" height="513" viewBox="0 0 513 513" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d)">
+                                    <path class="item-svg-chart chart-bonus" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M390.887 120.347L313.751 176.063C328.883 193.254 338.061 215.81 338.061 240.509C338.061 258.776 333.041 275.871 324.304 290.49L397.174 344.37L400.986 346.835C421.215 316.37 433 279.815 433 240.509C433 195.055 417.241 153.28 390.887 120.347Z"
+                                        fill="url(#paint0_linear_chart)" />
+                                    <path class="item-svg-chart chart-development" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M239.669 48.0002C133.73 48.4824 48 134.482 48 240.499C48 346.815 134.214 433 240.564 433C307.595 433 366.627 398.762 401.114 346.826L397.302 344.36L324.433 290.48C307.391 318.997 276.208 338.093 240.564 338.093C186.647 338.093 142.939 294.398 142.939 240.499C142.939 186.794 186.333 143.22 239.982 142.907L239.669 134.847V48.0002Z"
+                                        fill="url(#paint1_linear_chart)" />
+                                    <path class="item-svg-chart chart-team" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M391.015 120.34C355.728 76.244 301.445 48 240.564 48C240.266 48 239.967 48.0007 239.669 48.002V134.849L239.982 142.909C240.176 142.908 240.37 142.908 240.564 142.908C269.774 142.908 295.988 155.732 313.879 176.056L391.015 120.34Z"
+                                        fill="url(#paint2_linear_chart)" />
+                                </g>
+                                <circle opacity="0.05" cx="240.5" cy="240.5" r="63.3841" fill="white" />
+                                <circle opacity="0.1" cx="240.5" cy="240.5" r="45.7774" fill="white" />
+                                <circle opacity="0.2" cx="240.5" cy="240.5" r="29.3445" fill="white" />
+                                <defs>
+                                    <filter id="filter0_d" x="0" y="0" width="513" height="513"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="16" dy="16" />
+                                        <feGaussianBlur stdDeviation="32" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                            result="shape" />
+                                    </filter>
+                                    <linearGradient id="paint0_linear_chart" x1="373.375" y1="120.347" x2="373.375"
+                                        y2="346.835" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EE9BCD" />
+                                        <stop offset="1" stop-color="#AB75F1" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_chart" x1="224.557" y1="48.0002" x2="224.557"
+                                        y2="433" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FCD281" />
+                                        <stop offset="1" stop-color="#FC8E72" />
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_chart" x1="307.176" y1="179.709" x2="319.314"
+                                        y2="46.3487" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#82C3E8" />
+                                        <stop offset="1" stop-color="#9A80E6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
                         </div>
                     </div>
                     <div class="col-md-6 col-12">
@@ -328,7 +422,7 @@
                 </div>
             </div>
         </div>
-        <div class="whitepaper bg-0d1118">
+        <div class="whitepaper bg-0d1118" id="whitepaper">
             <div class="container">
                 <div class="tokenomic-title text-center lufga-regular text-40 color-ffffff fw-600">Whitepaper</div>
                 <div class="tokenomic-des text-center inter-regular text-16 color-94989e fw-400">
@@ -343,7 +437,7 @@
                             <img src="assets/images/Group 144.png">
                         </div>
                     </div>
-                    <div class="col-md-6 col-12">
+                    <div class="col-md-6 col-12 text-center">
                         <div class="item-flag">
                             <img src="assets/images/Flags/1200px-Flag_of_the_United_Kingdom.svg.png">
                             <div class="inter-regular text-16 color-ffffff text-center">
@@ -456,7 +550,7 @@
                 </div>
             </div>
         </div>
-        <div class="roadmap bg-0d1118">
+        <div class="roadmap bg-0d1118" id="roadmap">
             <div class="container">
                 <div class="tokenomic-title text-center lufga-regular text-40 color-ffffff fw-600">Roadmap</div>
                 <div class="tokenomic-des text-center inter-regular text-16 color-94989e fw-400">
@@ -578,7 +672,7 @@
                 </div>
             </div>
         </div>
-        <div class="advisors bg-181f2d">
+        <div class="advisors bg-181f2d" id="team">
             <div class="container">
                 <div class="tokenomic-title text-center lufga-regular text-40 color-ffffff fw-600">Meet our advisors
                 </div>
@@ -715,7 +809,7 @@
     <div class="footer bg-0d1118">
         <div class="f-info">
             <div class="container">
-                <div class="d-flex">
+                <div class="d-md-flex d-block">
                     <div class="f-slogan">
                         <div class="logo">
                             <img src="assets/images/Logo TABANK.png">
@@ -760,7 +854,7 @@
         </div>
         <div class="copyright">
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center color-94989e text-14">
+                <div class="d-md-flex d-block justify-content-between align-items-center color-94989e text-14">
                     <div>Copyright © 2021 TABANK. All rights reserved</div>
                     <div>
                         <span>We use cookies to improve your experience. </span>
@@ -777,6 +871,7 @@
 <script src="assets/libs/fontawesome-free-5.15.3-web/js/all.min.js"></script>
 <script src="assets/js/owl.carousel.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
 <!-- <script src='https://npmcdn.com/react@15.3.0/dist/react.min.js'></script>
 <script src='https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js'></script> -->
@@ -792,10 +887,12 @@
         ],
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                stagePadding: 0,
             },
             600: {
-                items: 1
+                items: 2,
+                stagePadding: 50,
             },
             1300: {
                 items: 2
