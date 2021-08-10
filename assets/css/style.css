@@ -163,13 +163,13 @@ body{
 }
 
 .user .signup{
-    padding: 14px 24px;
+    padding: 12px 24px;
 }
 
 .user .login{
     border: 1.5px solid #FFFFFF;
     margin-left: 8px;
-    padding: 14px 33px;
+    padding: 12px 33px;
 }
 
 .h-title{
@@ -727,4 +727,8 @@ html {
 
 .item-advisor:hover img{
     border: 3px #FCD281 solid;
+}
+
+button, input, optgroup, select, textarea{
+    font-family: inter-regular;
 }

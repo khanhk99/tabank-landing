@@ -80,4 +80,13 @@
         width: 300px;
         height: 300px;
     }
+
+    .about .row .col-md-6.plc{
+        padding-left: 15px;
+    }
+
+    .scroll-up{
+        width: 50px;
+        height: 50px;
+    }
 }
