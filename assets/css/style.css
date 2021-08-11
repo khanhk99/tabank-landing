@@ -728,3 +728,7 @@ html {
 button, input, optgroup, select, textarea{
     font-family: inter-regular;
 }
+
+.item-roadmap:hover{
+    border-color: #ffffff;
+}
