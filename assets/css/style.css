@@ -188,10 +188,6 @@ body{
     margin-right: 10px;
 }
 
-.js-banner-list .item-banner{
-    /* min-height: 407px; */
-}
-
 .js-banner-list .item-banner img{
     height: 100%;
 }
@@ -612,11 +608,11 @@ html {
 .menu-responsive ul{
     list-style: none;
     padding-left: 0;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .menu-responsive ul li{
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .bg-team{

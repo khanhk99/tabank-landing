@@ -87,7 +87,8 @@
     }
 
     .header{
-        padding-bottom: 100px;
+        padding-bottom: 300px;
+        background-image: url(../images/BG-mobile.png);
     }
 
     .item-solution{
@@ -170,5 +171,9 @@
     .copyright{
         padding-top: 24px;
         text-align: center;
+    }
+
+    .listing-des{
+        margin-bottom: 48px;
     }
 }
