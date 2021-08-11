@@ -1,22 +1,37 @@
 @media (max-width: 768px) {
+    .text-16{
+        font-size: 14px;
+    }
+
+    .text-40{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
     .f-slogan{
-        padding: 20px 0 0 20px;
+        padding: 20px 0 40px 20px;
         width: 100%;
     }
     
     .f-contact{
-        padding: 20px 0 0 20px;
+        padding: 20px 0 40px 20px;
         width: 100%;
+        border-color: #31353D;
+        border-style: solid;
+        border-width: 1px 0px 1px 0px;
     }
     
     .f-newsletter{
-        padding: 20px 0 0 20px;
+        padding: 20px 0 40px 20px;
         width: 100%;
     }
 
+    .f-contact .f-title, .f-newsletter .f-title{
+        margin-bottom: 24px;
+    }
+
     .item-contact{
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-bottom: 48px;
     }
 
     .item-advisor{
@@ -44,8 +59,10 @@
     }
 
     .h-title{
-        font-size: 36px;
-        margin-top: 20px;
+        font-size: 32px;
+        margin-top: 68px;
+        padding: 0;
+        line-height: 36px;
     }
 
     .h-description, .tokenomic-des, .tokenomic-des{
@@ -54,6 +71,7 @@
 
     .buy.btn, .btn-contactus{
         padding: 8px 16px;
+        margin: 12px auto;
     }
 
     .about .row .col-md-6.plc{
@@ -73,7 +91,7 @@
     }
 
     .item-solution{
-        margin-bottom: 15px;
+        margin-bottom: 24px;
     }
 
     .tokenomic-chart svg{
@@ -88,5 +106,69 @@
     .scroll-up{
         width: 50px;
         height: 50px;
+    }
+
+    .js-banner-list .owl-nav{
+        margin-top: 24px;
+    }
+
+    .listing-title{
+        margin-top: 100px;
+    }
+
+    .list-solutions{
+        margin-top: 48px;
+    }
+
+    .intro{
+        padding-bottom: 100px;
+    }
+
+    .tokenomic, .whitepaper, .contactus{
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+
+    .tokenomic-des{
+        margin-bottom: 48px;
+    }
+
+    .tokenomic-chart{
+        text-align: center;
+    }
+
+    .item-flag{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .roadmap-main .nav-tabs{
+        margin-bottom: 24px;
+    }
+
+    .item-roadmap{
+        padding: 16px 0;
+    }
+
+    .item-roadmap .btn span{
+        margin-right: 30px;
+        text-align: left;
+    }
+
+    .item-roadmap .tab-collapse{
+        margin-top: 16px;
+    }
+
+    .roadmap{
+        padding-bottom: 100px;
+    }
+
+    .advisors{
+        padding-top: 40px;
+    }
+
+    .copyright{
+        padding-top: 24px;
+        text-align: center;
     }
 }
